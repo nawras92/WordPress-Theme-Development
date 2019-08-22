@@ -2,20 +2,23 @@
         <section>
             <h2>Blog Posts</h2>
 
-            <article>
-                <h3> article 1</h3>
-                <p> this is the content of article 1 </p>
-            </article>
 
-            <article>
-                <h3> article 2</h3>
-                <p> this is the content of article 2 </p>
-            </article>
+            <?php if (have_posts()): ?>
+                <?php while (have_posts()):?>
+                    <?php the_post(); ?>
+                    <article>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <?php the_content(); ?>
+                        <?php the_author(); ?>
+                        <?php the_tags(); ?>
+                        <?php the_category(); ?>
+                        <?php the_date(); ?>
+                    </article>
+                <?php endwhile; ?>
+            <?php else: ?>
+                <?php echo "There are no posts"; ?>
+            <?php endif; ?>
 
-            <article>
-                <h3> article 3</h3>
-                <p> this is the content of article 3 </p>
-            </article>
 
         </section>
 
