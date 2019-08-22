@@ -2,13 +2,13 @@
 
 <html>
     <head>
-    <title> LWN THEME </title>
+    <title><?php bloginfo('name'); ?></title>
 
     <?php wp_head(); ?>
     </head>
 
     <body>
         <header>
-            <h1>My website</h1>
-            <p> this is my website </p>
+            <h1><?php bloginfo('name'); ?></h1>
+            <p><?php bloginfo('description'); ?></p>
         </header>
