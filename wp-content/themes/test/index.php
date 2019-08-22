@@ -1,0 +1,1 @@
+<?php echo  "My amazing new theme"; ?>
