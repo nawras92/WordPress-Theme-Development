@@ -2,6 +2,7 @@
         <section>
 
         <p> Page not found </p>
+        <?php get_search_form(); ?>
 
         </section>
 
