@@ -4,7 +4,7 @@
                 <?php while (have_posts()):?>
                     <?php the_post(); ?>
                     <article>
-                        <h3><?php the_title(); ?></h3>
+                        <h1><?php the_title(); ?></h1>
                         <span>
                           Published on: <?php the_date(); ?>
                           By: <?php the_author_posts_link(); ?>
