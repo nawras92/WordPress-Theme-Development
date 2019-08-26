@@ -7,13 +7,12 @@ Template name: About us
 
 <?php get_header(); ?>
         <section>
-            <h2>About us page</h2>
 
             <?php if (have_posts()): ?>
                 <?php while (have_posts()):?>
                     <?php the_post(); ?>
                     <article>
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                         <span>
                           Published on: <?php the_date(); ?>
                           By: <?php the_author_posts_link(); ?>
