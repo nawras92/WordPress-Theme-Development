@@ -9,7 +9,13 @@
 
     <body>
         <header>
-            <h1><?php bloginfo('name'); ?></h1>
+
+            <?php if (is_front_page() || is_home()): ?>
+                <h1><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></h1>
+            <?php else: ?>
+                <p><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></p>
+            <?php endif; ?>
+
             <p><?php bloginfo('description'); ?></p>
             <?php get_search_form(); ?>
         </header>
