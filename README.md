@@ -4,4 +4,4 @@ Studying the WordPress Theme Handbook with my subscribers [*Learn With Naw Chann
 
 **Author**: [*Nawras Ali*](https://nawrasothman.space)
 
-**Video URL**: [*Click here to watch this tutorial series*]()
+**Video URL**: [*Click here to watch this tutorial series*](https://www.youtube.com/playlist?list=PLt0HRIA9i35shlC5OXmu9dUIAjgS8pFpd)
