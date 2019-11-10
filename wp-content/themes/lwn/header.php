@@ -8,14 +8,13 @@
     </head>
 
     <body>
-        <header>
-
-            <?php if (is_front_page() || is_home()): ?>
-                <h1><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></h1>
-            <?php else: ?>
-                <p><a href="<?php echo home_url();?>"><?php bloginfo('name'); ?></a></p>
-            <?php endif; ?>
-
-            <p><?php bloginfo('description'); ?></p>
-            <?php get_search_form(); ?>
-        </header>
+        <nav id="main-nav">
+            <div class="container">
+                <a href="#" class="logo">Website Name</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        
