@@ -11,9 +11,104 @@ Tags: RTL, Responsive.
 */
 
 
-body {
-
-    background: blue;
-    color:white;
+/* Theme colors */
+:root{
+    --primary-color: #DA0463 ;
+    --secondary-color: #404B69 ;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --max-width: 90%;
 }
 
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Global */
+
+body {
+    background: var(--light-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+/* Navigation */
+
+#main-nav{
+    background: #fff;
+    position: relative;
+    top: 0;
+}
+
+#main-nav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#main-nav .container .logo{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#main-nav .container .logo:hover{
+    opacity: 0.8;
+}
+
+#main-nav .container ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.25rem;
+
+}
+
+#main-nav .container ul li a{
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#main-nav .container ul li a:hover{
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/* Responsivity */
+@media(max-width:768px){
+    .container{
+      max-width: 100%;
+    }
+    #main-nav .container,
+    #main-nav ul{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    #main-nav ul li a{
+      font-size: 0.5rem;
+      padding: 0.25rem;
+    }
+    #main-nav .logo{
+      font-size: 1rem;
+    }
+  }
