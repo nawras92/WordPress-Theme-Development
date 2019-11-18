@@ -76,7 +76,6 @@ ul{
     display: flex;
     flex-direction: row;
     margin-top: 0.25rem;
-
 }
 
 #main-nav .container ul li a{
@@ -91,24 +90,33 @@ ul{
     border-radius: 5px;
 }
 
+/* Responsive Rules */
 
-/* Responsivity */
-@media(max-width:768px){
+@media(max-width: 768px){
     .container{
-      max-width: 100%;
+        max-width: 100%;
     }
     #main-nav .container,
-    #main-nav ul{
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    #main-nav .container ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-  
-    #main-nav ul li a{
-      font-size: 0.5rem;
-      padding: 0.25rem;
+    #main-nav .container ul li a{
+        font-size: 0.75rem;
+        padding: 0.25rem;
     }
-    #main-nav .logo{
-      font-size: 1rem;
+    #main-nav .container .logo{
+        font-size: 1rem;
     }
-  }
+}
+
+
+
+
+
+
+
+
+
