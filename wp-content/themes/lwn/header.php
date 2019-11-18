@@ -11,10 +11,8 @@
         <nav id="main-nav">
             <div class="container">
                 <a href="#" class="logo">Website Name</a>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
+                <?php $args=array('theme-location' => 'main-menu'); ?>
+                <?php wp_nav_menu($args); ?>
             </div>
         </nav>
         
