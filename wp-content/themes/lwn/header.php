@@ -10,7 +10,9 @@
     <body>
         <nav id="main-nav">
             <div class="container">
-                <a href="#" class="logo">Website Name</a>
+                <a href="<?php echo site_url(); ?>" class="logo">
+                <?php bloginfo('name'); ?>
+                </a>
                 <?php $args=array('theme-location' => 'main-menu'); ?>
                 <?php wp_nav_menu($args); ?>
             </div>
