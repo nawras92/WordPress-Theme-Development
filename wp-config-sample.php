@@ -1,48 +1,46 @@
 <?php
 /**
- * The base configuration for WordPress
+ * إعدادات الووردبريس الأساسية
  *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
+ * عملية إنشاء الملف wp-config.php تستخدم هذا الملف أثناء التنصيب. لا يجب عليك
+ * استخدام الموقع، يمكنك نسخ هذا الملف إلى "wp-config.php" وبعدها ملئ القيم المطلوبة.
  *
- * This file contains the following configurations:
+ * هذا الملف يحتوي على هذه الإعدادات:
  *
- * * MySQL settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
+ * * إعدادات قاعدة البيانات
+ * * مفاتيح الأمان
+ * * بادئة جداول قاعدة البيانات
+ * * المسار المطلق لمجلد الووردبريس
  *
  * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
+// ** إعدادات قاعدة البيانات - يمكنك الحصول على هذه المعلومات من مستضيفك ** //
+
+/** اسم قاعدة البيانات لووردبريس */
 define( 'DB_NAME', 'database_name_here' );
 
-/** MySQL database username */
+/** اسم مستخدم قاعدة البيانات */
 define( 'DB_USER', 'username_here' );
 
-/** MySQL database password */
+/** كلمة مرور قاعدة البيانات */
 define( 'DB_PASSWORD', 'password_here' );
 
-/** MySQL hostname */
+/** عنوان خادم قاعدة البيانات */
 define( 'DB_HOST', 'localhost' );
 
-/** Database Charset to use in creating database tables. */
+/** ترميز قاعدة البيانات */
 define( 'DB_CHARSET', 'utf8' );
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** نوع تجميع قاعدة البيانات. لا تغير هذا إن كنت غير متأكد */
 define( 'DB_COLLATE', '' );
 
 /**#@+
- * Authentication Unique Keys and Salts.
+ * مفاتيح الأمان.
  *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * استخدم الرابط التالي لتوليد المفاتيح {@link https://api.wordpress.org/secret-key/1.1/salt/}
  *
  * @since 2.6.0
  */
@@ -58,33 +56,28 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * بادئة الجداول في قاعدة البيانات.
  *
- * You can have multiple installations in one database if you give each
- * a unique prefix. Only numbers, letters, and underscores please!
+ * تستطيع تركيب أكثر من موقع على نفس قاعدة البيانات إذا أعطيت لكل موقع بادئة جداول مختلفة
+ * يرجى استخدام حروف، أرقام وخطوط سفلية فقط!
  */
 $table_prefix = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
+ * للمطورين: نظام تشخيص الأخطاء
  *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- *
- * For information on other constants that can be used for debugging,
- * visit the Codex.
+ * قم بتغييرالقيمة، إن أردت تمكين عرض الملاحظات والأخطاء أثناء التطوير.
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
 
-/* That's all, stop editing! Happy publishing. */
+/* هذا هو المطلوب، توقف عن التعديل! نتمنى لك التوفيق. */
 
-/** Absolute path to the WordPress directory. */
+/** المسار المطلق لمجلد ووردبريس. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __FILE__ ) . '/' );
 }
 
-/** Sets up WordPress vars and included files. */
+/** إعداد متغيرات الووردبريس وتضمين الملفات. */
 require_once( ABSPATH . 'wp-settings.php' );

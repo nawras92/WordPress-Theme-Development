@@ -1,15 +1,15 @@
-# Translation of WordPress - 5.2.x - Development - Continents & Cities in Arabic
-# This file is distributed under the same license as the WordPress - 5.2.x - Development - Continents & Cities package.
+# Translation of WordPress - 5.3.x - Development - Continents & Cities in Arabic
+# This file is distributed under the same license as the WordPress - 5.3.x - Development - Continents & Cities package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-08-02 01:01:36+0000\n"
+"PO-Revision-Date: 2019-09-26 15:38:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: ar\n"
-"Project-Id-Version: WordPress - 5.2.x - Development - Continents & Cities\n"
+"Project-Id-Version: WordPress - 5.3.x - Development - Continents & Cities\n"
 
 #: wp-admin/includes/continents-cities.php:478
 msgid "Saratov"
@@ -229,11 +229,11 @@ msgstr "نورفولك"
 
 #: wp-admin/includes/continents-cities.php:536
 msgid "Niue"
-msgstr "نييو"
+msgstr "نييوي"
 
 #: wp-admin/includes/continents-cities.php:535
 msgid "Nauru"
-msgstr "نورو"
+msgstr "ناورو"
 
 #: wp-admin/includes/continents-cities.php:534
 msgid "Midway"
@@ -325,11 +325,11 @@ msgstr "الهادى"
 
 #: wp-admin/includes/continents-cities.php:509
 msgid "Reunion"
-msgstr " ريونيون"
+msgstr "ريونيون"
 
 #: wp-admin/includes/continents-cities.php:508
 msgid "Mayotte"
-msgstr "مايوت "
+msgstr "مايوت"
 
 #: wp-admin/includes/continents-cities.php:507
 msgid "Mauritius"
@@ -1641,7 +1641,7 @@ msgstr "هاليفاكس"
 
 #: wp-admin/includes/continents-cities.php:138
 msgid "Guyana"
-msgstr "جويانا"
+msgstr "غيانا"
 
 #: wp-admin/includes/continents-cities.php:137
 msgid "Guayaquil"
@@ -1653,11 +1653,11 @@ msgstr "غواتيمالا"
 
 #: wp-admin/includes/continents-cities.php:135
 msgid "Guadeloupe"
-msgstr "جواديلوبي"
+msgstr "غوادلوب"
 
 #: wp-admin/includes/continents-cities.php:134
 msgid "Grenada"
-msgstr "جرينادا"
+msgstr "غرينادا"
 
 #: wp-admin/includes/continents-cities.php:133
 msgid "Grand Turk"
@@ -1701,7 +1701,7 @@ msgstr "ادمونتون"
 
 #: wp-admin/includes/continents-cities.php:122
 msgid "Dominica"
-msgstr "الدومينيك"
+msgstr "الدومينيكان"
 
 #: wp-admin/includes/continents-cities.php:121
 msgid "Detroit"
