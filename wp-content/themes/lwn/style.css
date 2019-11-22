@@ -33,6 +33,16 @@ body {
     background: var(--light-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-bottom: 1rem;
+}
+
 a{
     text-decoration: none;
     color: var(--dark-color);
@@ -45,6 +55,21 @@ ul{
 .container{
     max-width: var(--max-width);
     margin: auto;
+}
+
+.lwn-widget h4{
+    width: 50%;
+    border-bottom: 1px dotted var(--primary-color);
+    padding: 0.1rem 0;
+}
+
+.lwn-widget li{
+    width: 70%;
+    border-bottom: 1px dotted #555;
+}
+
+.lwn-widget li a:hover{
+    color: var(--primary-color) !important;
 }
 
 /* Navigation */
@@ -89,6 +114,54 @@ ul{
     color: #fff;
     border-radius: 5px;
 }
+
+/* Footer */
+
+#main-footer{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#main-footer a{
+    color: #fff;
+}
+
+#main-footer .footer-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+#main-footer .footer-container>*:last-child{
+    background: #555;
+    grid-column: 1 /span 3;
+    text-align:center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Rules */
 
