@@ -115,6 +115,24 @@ ul{
     border-radius: 5px;
 }
 
+/* Header */
+
+#main-header{
+    background: var(--dark-color);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 #main-footer{
