@@ -142,27 +142,6 @@ ul{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive Rules */
 
 @media(max-width: 768px){
@@ -182,6 +161,23 @@ ul{
     }
     #main-nav .container .logo{
         font-size: 1rem;
+    }
+    #main-footer .footer-container{
+        grid-template-columns: 1fr;
+        justify-items:center;
+    }
+    #main-footer .footer-container>*:last-child{
+        grid-column: 1;
+    }
+    #main-footer .footer-container .footer-column{
+        width: 100%;
+    }
+    .lwn-widget{
+        border-bottom: 1px dotted #555;
+    }
+    .lwn-widget ul li:last-child{
+        border: none;
+        padding-bottom: 1rem;
     }
 }
 
