@@ -1,5 +1,14 @@
 <?php get_header(); ?>
-        <section>
+
+    <header id="main-header">
+        <div class="container">
+            <h1><?php bloginfo('name'); ?></h1>
+            <p><?php bloginfo('description'); ?></p>
+    </header>
+ 
+
+
+<section>
             <h2>Blog Posts</h2>
 
 
