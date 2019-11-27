@@ -23,7 +23,7 @@ function lwn_register_widgets(){
     $footer1 = array(
                'name' => 'Footer Column 1',
                'id' => 'footer1',
-               'before_widget'=> '<div id="%2$s" class="widget lwn-widget %2$s">',
+               'before_widget'=> '<div id="%1$s" class="widget lwn-widget %2$s">',
                'after_widget' => '</div>',
                'before_title' => '<h4>',
                'after_title'=> '</h4>'
@@ -34,7 +34,7 @@ function lwn_register_widgets(){
     $footer2 = array(
         'name' => 'Footer Column 2',
         'id' => 'footer2',
-        'before_widget'=> '<div id="%2$s" class="widget lwn-widget %2$s">',
+        'before_widget'=> '<div id="%1$s" class="widget lwn-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title'=> '</h4>'
@@ -45,7 +45,7 @@ register_sidebar($footer2);
     $footer3 = array(
         'name' => 'Footer Column 3',
         'id' => 'footer3',
-        'before_widget'=> '<div id="%2$s" class="widget lwn-widget %2$s">',
+        'before_widget'=> '<div id="%1$s" class="widget lwn-widget %2$s">',
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title'=> '</h4>'
