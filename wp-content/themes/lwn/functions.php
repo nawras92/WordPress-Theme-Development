@@ -1,5 +1,7 @@
 <?php
 
+// Theme support
+add_theme_support('post-thumbnails');
 
 function lwn_enqueue_stylesheets(){
     wp_enqueue_style('lwn-stylesheet',get_stylesheet_uri());
