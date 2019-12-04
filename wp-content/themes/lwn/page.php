@@ -1,24 +1,26 @@
 <?php get_header(); ?>
-        <section>
-            <?php if (have_posts()): ?>
-                <?php while (have_posts()):?>
+
+    <!-- Single -->
+    <section id="single" class="container">
+        <div class="single-content">
+            <?php if(have_posts()): ?>
+                <?php while(have_posts()):  ?>
                     <?php the_post(); ?>
-                    <article>
-                        <h1><?php the_title(); ?></h1>
-                        <span>
-                          Published on: <?php the_date(); ?>
-                          By: <?php the_author_posts_link(); ?>
-                        </span>
-                        <?php the_content(); ?>
-                    </article>
+                        <article class="card">
+                            <div class="article-header">
+                                <h1><?php the_title(); ?></h1>
+                                <small><?php the_date(); ?> - <?php the_author(); ?></small>
+                            </div>
+                            <div class="article-content">
+                                <?php the_content(); ?>
+                            </div>
+                        </article>
                 <?php endwhile; ?>
-            <?php else: ?>
-                <?php echo "There are no posts"; ?>
             <?php endif; ?>
+        </div>
+        <?php  get_sidebar(); ?>
 
+    </section>
 
-        </section>
-
-        <?php get_sidebar(); ?>
 
 <?php get_footer(); ?>
