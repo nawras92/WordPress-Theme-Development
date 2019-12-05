@@ -20,6 +20,7 @@
                         </article>
                 <?php endwhile; ?>
             <?php endif; ?>
+            <?php get_template_part('pagination'); ?>
         </div>
         <?php  get_sidebar(); ?>
 

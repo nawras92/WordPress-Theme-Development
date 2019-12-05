@@ -39,6 +39,7 @@
                 <?php echo "There are NO posts."; ?>
             <?php endif; ?>
         </div>
+        <?php get_template_part('pagination'); ?>
     </section>
 
 

@@ -238,6 +238,28 @@ img{
     border-radius: 5px;
 }
 
+/* Pagination */
+#pagination .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination .container div{
+    margin: 1rem;
+}
+
+#pagination .container a{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
+
+
 
 
 /* Footer */
