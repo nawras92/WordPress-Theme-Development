@@ -6,14 +6,14 @@
             <?php if(is_single()): ?>
                 <?php previous_post_link('<strong>%link</strong>'); ?>
             <?php else: ?>
-                <?php previous_posts_link('Older Posts'); ?>
+                <?php previous_posts_link('Previous Posts'); ?>
             <?php endif; ?>
         </div>
         <div class="nav-next align-right">
         <?php if(is_single()): ?>
                 <?php next_post_link('<strong>%link</strong>'); ?>
         <?php else: ?>
-                <?php next_posts_link('Newer Posts'); ?>
+                <?php next_posts_link('Next Posts'); ?>
         <?php endif; ?>
         </div>    
     </div>
