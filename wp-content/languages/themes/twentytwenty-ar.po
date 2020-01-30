@@ -41,11 +41,11 @@ msgstr "قراءة المزيد"
 msgid "August 1 -- December 1"
 msgstr "1 أغسطس -- 1 ديسمبر"
 
-#: classes/class-twentytwenty-customize.php:353
+#: classes/class-twentytwenty-customize.php:374
 msgid "Overlay Text Color"
 msgstr "لون نصّ الغطاء"
 
-#: classes/class-twentytwenty-customize.php:331
+#: classes/class-twentytwenty-customize.php:352
 msgid "Overlay Background Color"
 msgstr "لون خلفية الغطاء"
 
@@ -73,7 +73,7 @@ msgstr "الحياة التي أستحقّها"
 msgid "From Signac to Matisse"
 msgstr "من سينياك إلى ماتيس"
 
-#: inc/template-tags.php:387
+#: inc/template-tags.php:393
 msgctxt "A string that is output before one or more categories"
 msgid "In"
 msgstr "في"
@@ -82,11 +82,11 @@ msgstr "في"
 msgid "Join the Club"
 msgstr "الانضمام للنادي"
 
-#: classes/class-twentytwenty-customize.php:332
+#: classes/class-twentytwenty-customize.php:353
 msgid "The color used for the overlay. Defaults to the accent color."
 msgstr "اللون المستخدم للغطاء. الإعدادات الافتراضية لشدّة اللون."
 
-#: classes/class-twentytwenty-customize.php:374
+#: classes/class-twentytwenty-customize.php:395
 msgid "Overlay Opacity"
 msgstr "شفافية الغطاء"
 
@@ -98,11 +98,11 @@ msgstr "العمل والأيام"
 msgid "Apply a custom color for links, buttons, featured images."
 msgstr "تطبيق لون مخصص للروابط، والأزرار، والصور المميزة."
 
-#: classes/class-twentytwenty-customize.php:262
+#: classes/class-twentytwenty-customize.php:283
 msgid "Settings for the \"Cover Template\" page template. Add a featured image to use as background."
 msgstr "إعدادات قالب صفحة \"قالب الغلاف\". إضافة صورة مميزة لاستخدامها كخلفية."
 
-#: classes/class-twentytwenty-customize.php:354
+#: classes/class-twentytwenty-customize.php:375
 msgid "The color used for the text in the overlay."
 msgstr "اللون المستخدم للنص في الغطاء."
 
@@ -154,7 +154,7 @@ msgstr "للأعلى %s"
 msgid "Up %s"
 msgstr "أعلى %s"
 
-#: searchform.php:24 template-parts/modal-search.php:20
+#: template-parts/modal-search.php:20 searchform.php:24
 msgid "Search for:"
 msgstr "البحث عن:"
 
@@ -216,7 +216,7 @@ msgstr "التعليقات"
 msgid "Comments are closed."
 msgstr "التعليقات مغلقة."
 
-#: inc/starter-content.php:176 inc/starter-content.php:186 functions.php:491
+#: functions.php:491 inc/starter-content.php:176 inc/starter-content.php:186
 msgid "Primary"
 msgstr "رئيسي"
 
@@ -253,7 +253,7 @@ msgstr "الصفحة غير موجودة."
 msgid "Retina logo"
 msgstr "شعار Retina"
 
-#: classes/class-twentytwenty-customize.php:248
+#: classes/class-twentytwenty-customize.php:269
 msgid "Full text"
 msgstr "النص بالكامل"
 
@@ -353,7 +353,7 @@ msgstr "القائمة"
 msgid "Horizontal"
 msgstr "أفقي"
 
-#: classes/class-twentytwenty-walker-page.php:134 inc/template-tags.php:545
+#: classes/class-twentytwenty-walker-page.php:134 inc/template-tags.php:555
 msgid "Show sub menu"
 msgstr "عرض القائمة الفرعية"
 
@@ -377,20 +377,20 @@ msgstr "قائمة سطح المكتب الأفقية"
 msgid "Desktop Expanded Menu"
 msgstr "قائمة سطح المكتب الموسَّعة"
 
-#: inc/template-tags.php:365
+#: inc/template-tags.php:371
 msgid "Post date"
 msgstr "تاريخ المقالة"
 
-#: template-parts/entry-header.php:36 template-parts/content-cover.php:70
-#: inc/template-tags.php:383
+#: template-parts/content-cover.php:70 template-parts/entry-header.php:36
+#: inc/template-tags.php:389
 msgid "Categories"
 msgstr "التصنيفات"
 
-#: inc/template-tags.php:401
+#: inc/template-tags.php:407
 msgid "Tags"
 msgstr "الوسوم"
 
-#: inc/template-tags.php:439
+#: inc/template-tags.php:445
 msgid "Sticky post"
 msgstr "مقالة مثبتة"
 
@@ -413,7 +413,7 @@ msgid "Scroll Down"
 msgstr "التمرير للأسفل"
 
 #. translators: %s: Author name
-#: template-parts/entry-author-bio.php:20 inc/template-tags.php:348
+#: template-parts/entry-author-bio.php:20 inc/template-tags.php:354
 msgid "By %s"
 msgstr "بواسطة %s"
 
@@ -454,15 +454,15 @@ msgid "Full Width Template"
 msgstr "قالب بالعرض الكامل"
 
 #. Template Name of the theme
-#: classes/class-twentytwenty-customize.php:260
+#: classes/class-twentytwenty-customize.php:281
 msgid "Cover Template"
 msgstr "قالب الغلاف"
 
-#: classes/class-twentytwenty-customize.php:249
+#: classes/class-twentytwenty-customize.php:270
 msgid "Summary"
 msgstr "ملخّص (موجز)"
 
-#: classes/class-twentytwenty-customize.php:284
+#: classes/class-twentytwenty-customize.php:305
 msgid "Fixed Background Image"
 msgstr "صورة خلفية ثابتة"
 
@@ -470,7 +470,7 @@ msgstr "صورة خلفية ثابتة"
 msgid "By Post Author"
 msgstr "بواسطة كاتب المقالة"
 
-#: inc/template-tags.php:341
+#: inc/template-tags.php:347
 msgid "Post author"
 msgstr "كاتب المقالة"
 
@@ -495,15 +495,15 @@ msgstr "لا يمكن العثور على الصفحة التي كنت تبحث 
 msgid "Scales the logo to half its uploaded size, making it sharp on high-res screens."
 msgstr "تحجيم الشعار إلى نصف حجمه الذي تم رفعه، مما يجعله حادًا على شاشات عالية الدقة."
 
-#: classes/class-twentytwenty-customize.php:246
+#: classes/class-twentytwenty-customize.php:267
 msgid "On archive pages, posts show:"
 msgstr "في صفحات الأرشيف، تظهر المقالات:"
 
-#: classes/class-twentytwenty-customize.php:285
+#: classes/class-twentytwenty-customize.php:306
 msgid "Creates a parallax effect when the visitor scrolls."
 msgstr "إنشاء تأثير parallax عندما يقوم الزائر بالتمرير."
 
-#: classes/class-twentytwenty-customize.php:375
+#: classes/class-twentytwenty-customize.php:396
 msgid "Make sure that the contrast is high enough so that the text is readable."
 msgstr "تأكد من أن التباين مرتفع بدرجة كافية بحيث يكون النص قابلاً للقراءة."
 
