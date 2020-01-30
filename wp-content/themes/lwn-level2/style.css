@@ -1,0 +1,373 @@
+/*
+Theme Name: LWN
+Author: Learn With Naw Group
+Author URI: https://learnwithnaw.com
+Description: Just another test theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lwn
+Tags: RTL, Responsive.
+*/
+
+
+/* Theme colors */
+:root{
+    --primary-color: #DA0463 ;
+    --secondary-color: #404B69 ;
+    --light-color: #f4f4f4;
+    --dark-color: #333;
+    --max-width: 90%;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* Global */
+
+body {
+    background: var(--light-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-bottom: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.container{
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.lwn-widget h4{
+    width: 50%;
+    border-bottom: 1px dotted var(--primary-color);
+    padding: 0.1rem 0;
+}
+
+.lwn-widget li{
+    width: 70%;
+    border-bottom: 1px dotted #555;
+}
+
+.lwn-widget li a:hover{
+    color: var(--primary-color) !important;
+}
+
+/* Cards */
+
+.card{
+    background: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.card h3 a{
+    color: var(--secondary-color);
+}
+
+.card h3 a:hover{
+    color: var(--primary-color);
+}
+
+/* Navigation */
+
+#main-nav{
+    background: #fff;
+    position: relative;
+    top: 0;
+}
+
+#main-nav .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#main-nav .container .logo{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#main-nav .container .logo:hover{
+    opacity: 0.8;
+}
+
+#main-nav .container ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.25rem;
+}
+
+#main-nav .container ul li a{
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#main-nav .container ul li a:hover{
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Header */
+
+#main-header{
+    background: var(--dark-color);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Blog posts */
+#blog-posts .posts-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+#blog-posts .posts-container .card{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:1rem;
+    align-items: center;
+}
+
+.post-categories{
+    margin: 1rem 0;
+}
+
+.post-categories a{
+    display: inline-block;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.4rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.post-categories a:hover{
+    opacity: 0.8;
+}
+
+#blog-posts h2{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Single */
+
+#single{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 1rem;
+}
+
+#single .single-content .card .article-header{
+    background: var(--dark-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#single .lwn-widget:first-child h4{
+    width: 100%;
+    border-bottom: 1px dotted #fff;
+}
+
+/* Sidebar */
+
+#single aside .card:first-child{
+    background: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+}
+
+/* Search Form */
+#main-header .container #searchform input{
+    font-family: 'Changa', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#main-header #searchform input[id='s']{
+    width: 50%;
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+#main-header #searchform label[for='s']{
+    display: none;
+}
+
+#main-header #searchform input[id='s']:focus{
+    border: 1px solid var(--primary-color);
+}
+
+#main-header #searchform input[id='searchsubmit']{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Pagination */
+#pagination .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination .container div{
+    margin: 1rem;
+}
+
+#pagination .container a{
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+/* Footer */
+
+#main-footer{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+#main-footer a{
+    color: #fff;
+}
+
+#main-footer .footer-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+#main-footer .footer-container>*:last-child{
+    background: #555;
+    grid-column: 1 /span 3;
+    text-align:center;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+}
+
+
+/* Responsive Rules */
+
+@media(max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+    #main-nav .container,
+    #main-nav .container ul,
+    #pagination .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #main-nav .container ul li a{
+        font-size: 0.75rem;
+        padding: 0.25rem;
+    }
+    #main-nav .container .logo{
+        font-size: 1rem;
+    }
+    #main-footer .footer-container,
+    #blog-posts .posts-container,
+    #blog-posts .posts-container .card,
+    #single{
+        grid-template-columns: 1fr;
+        justify-items:center;
+    }
+    #single .card{
+        margin: 0.5rem;
+    }
+    #main-footer .footer-container>*:last-child{
+        grid-column: 1;
+    }
+    #main-footer .footer-container .footer-column{
+        width: 100%;
+    }
+    .lwn-widget{
+        border-bottom: 1px dotted #555;
+    }
+    .lwn-widget ul li:last-child{
+        border: none;
+        padding-bottom: 1rem;
+    }
+    #blog-posts .posts-container .card{
+        text-align: center;
+    }
+    #main-header #searchform input[id='s']{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    #main-header #searchform input[id='searchsubmit']{
+        display: block;
+        width: 100%;
+    }        
+}
+
+
+
+
+
+
+
+
+
