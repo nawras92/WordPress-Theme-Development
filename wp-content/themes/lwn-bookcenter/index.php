@@ -3,296 +3,31 @@
     <section id="main">
         <div class="container-90">
             <div class="d-grid-4">
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>                                
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div> 
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>                                
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div>
-                <div class="book text-center">
-                    <div class="book-thumbnail">
-                        <img src="https://via.placeholder.com/300x200" alt="book thumbnail">
-                    </div>
-                    <div class="book-title">
-                        <h3>
-                            <a href="#">
-                                Book title goes here
-                            </a>
-                        </h3>
-                    </div>
-                    <div class="book-description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sapiente repellendus est aperiam, totam cum.
-                        </p>
-                    </div>
-
-                </div> 
+                <?php if (have_posts()): ?>
+                    <?php while(have_posts()): ?>
+                        <?php the_post(); ?>
+                            <div class="book text-center">
+                                <div class="book-thumbnail">
+                                    <?php the_post_thumbnail('medium'); ?>
+                                </div>
+                                <div class="book-title">
+                                    <h3>
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_title(); ?>
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="book-description">
+                                    <p>
+                                        <?php the_excerpt(); ?>
+                                    </p>
+                                </div>
+                            </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
 
+            <?php get_template_part('pagination'); ?>
         </div>
     </section>    
 
