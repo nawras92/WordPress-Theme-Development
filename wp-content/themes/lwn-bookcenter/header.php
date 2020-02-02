@@ -6,8 +6,8 @@
     <?php wp_head(); ?>
     </head>
 <body>
-    <header id="main-header">
-        <div class="container">
+    <header id="main-header" class="py-1 my-1">
+        <div class="container bg-white text-center">
             <h1>
                 <a href="<?php echo site_url(); ?>" class="website-title">
                     <?php bloginfo('name'); ?>
