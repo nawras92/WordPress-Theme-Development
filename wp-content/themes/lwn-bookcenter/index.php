@@ -3,11 +3,9 @@
     <section id="main">
         <div class="container-90">
             <div class="d-grid-4">
-                <?php $args = array('post_type'=>'book', 'posts_per_page' => 12); ?>
-                <?php $the_query = new WP_Query($args); ?>
-                <?php if ($the_query->have_posts()): ?>
-                    <?php while($the_query->have_posts()): ?>
-                        <?php $the_query->the_post(); ?>
+                <?php if (have_posts()): ?>
+                    <?php while(have_posts()): ?>
+                        <?php the_post(); ?>
                             <div class="book text-center">
                                 <div class="book-thumbnail">
                                     <?php the_post_thumbnail('medium'); ?>
@@ -26,7 +24,6 @@
                                 </div>
                             </div>
                     <?php endwhile; ?>
-                    <?php wp_reset_postdata(); ?>
                 <?php endif; ?>
             </div>
 
