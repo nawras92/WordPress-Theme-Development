@@ -69,6 +69,18 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     grid-gap: 1rem;
 }
 
+.d-grid-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.d-grid-7-3{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-gap: 1rem;
+}
+
 .bg-white{
     background: #fff;
 }
@@ -116,6 +128,39 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     opacity: 0.7;
 }
 
+/* Taxonomy Page */
+#main .content .term-title{
+    margin: 1rem;
+    border-bottom : 0.2rem solid var(--secondary-color);
+}
+
+#main .content .term-title h1{
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+
+}
+
+#main #sidebar-book .sidebar-title{
+    margin: 1.5rem;
+    border-bottom : 0.2rem solid var(--primary-color);
+}
+
+#main #sidebar-book .sidebar-title p{
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+
 
 /* Pagination */
 #pagination{
@@ -161,7 +206,9 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     #main-header{
         border-bottom: 1rem solid var(--secondary-color);
     }
-    .d-grid-4{
+    .d-grid-4,
+    .d-grid-2,
+    .d-grid-7-3{
         grid-template-columns: 1fr;
     }
     #pagination{
