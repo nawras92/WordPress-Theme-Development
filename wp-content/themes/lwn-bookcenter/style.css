@@ -69,15 +69,28 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     grid-gap: 1rem;
 }
 
+.d-grid-6{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1rem;
+}
+
 .d-grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
 
+
 .d-grid-7-3{
     display: grid;
     grid-template-columns: 7fr 3fr;
+    grid-gap: 1rem;
+}
+
+.d-grid-2-8{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
     grid-gap: 1rem;
 }
 
@@ -87,6 +100,11 @@ h1, h2, h3, h4, h5, h6, p, a, img{
 
 .text-center{
     text-align: center;
+}
+
+.display-h1{
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 
@@ -160,6 +178,82 @@ h1, h2, h3, h4, h5, h6, p, a, img{
 
 }
 
+/* Book Single Page */
+table.book-info{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.book-info td{
+    padding: 0.3rem 0.2rem;
+    border: 2px solid var(--secondary-color);
+    text-align: center;
+}
+
+table.book-info td a{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+table.book-info td a:hover{
+    opacity: 0.7;
+}
+
+#main .content .book-section-title{
+    margin: 1.5rem;
+    border-bottom : 0.2rem solid var(--secondary-color);
+}
+
+#main .content .book-section-title p{
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#main .content .book .book-content{
+    margin: 1.5rem;
+}
+
+/* Front-page */
+#front-page .sub-title,
+#blog-posts .sub-title{
+    margin: 1.5rem;
+    border-bottom : 0.2rem solid var(--primary-color);
+}
+
+#front-page  .sub-title h3,
+#blog-posts .sub-title h3{
+    margin: 0;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    background: var(--primary-color);
+    color: var(--dark-color);
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#front-page .book-type .sub-title a:hover{
+    opacity:0.9;
+}
+
+#front-page .book-thumbnail img,
+#blog-posts .post-thumbnail img{
+    width: 70%;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Pagination */
@@ -208,7 +302,9 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     }
     .d-grid-4,
     .d-grid-2,
-    .d-grid-7-3{
+    .d-grid-6, 
+    .d-grid-7-3,
+    .d-grid-2-8{
         grid-template-columns: 1fr;
     }
     #pagination{
