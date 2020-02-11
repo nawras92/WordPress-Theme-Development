@@ -10,6 +10,12 @@ add_action('wp_enqueue_scripts', 'lwn_bookcenter_enqueue_stylesheets');
 // Add thumbnail support
 add_theme_support('post-thumbnails');
 
+// Register menus
+function lwn_bookcenter_register_menu(){
+	register_nav_menu('main-menu', 'Main Menu');
+}
+add_action('init', 'lwn_bookcenter_register_menu');
+
 
 // Register custom taxonomies (book_type, writer, publisher)
 function lwn_bookcenter_register_custom_taxonomies() {
