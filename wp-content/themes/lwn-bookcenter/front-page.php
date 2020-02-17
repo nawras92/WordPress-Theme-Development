@@ -53,7 +53,7 @@
             <div id="blog-posts">
                 <div class="sub-title">
                     <a href="<?php echo get_permalink(get_option('page_for_posts')); ?>">
-                        <h3>blog posts</h3>
+                        <h3><?php _e('Blog Posts', 'lwn-bookcenter'); ?></h3>
                     </a>
                 </div>
                 <div class="d-grid-6">

@@ -13,7 +13,7 @@
                         </div>
                         <table class="book-info">
                             <tr>
-                                <td>Title</td>
+                                <td><?php _e('Title', 'lwn-bookcenter'); ?></td>
                                 <td>
                                     <h1>
                                         <?php the_title(); ?>
@@ -21,25 +21,25 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Description</td>
+                                <td><?php _e('Description', 'lwn-bookcenter'); ?></td>
                                 <td>
                                     <?php the_excerpt(); ?>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Book Type</td>
+                                <td><?php _e('Book Type(s)', 'lwn-bookcenter'); ?></td>
                                 <td>
                                     <?php the_terms($post->ID, 'book_type', '', ' - ', '' ); ?>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Writer</td>
+                                <td><?php _e('Write(s)', 'lwn-bookcenter'); ?></td>
                                 <td>
                                     <?php the_terms($post->ID, 'writer', '', ' - ', '' ); ?>
                                 </td>
                             </tr>
                             <tr>
-                                <td>Publisher</td>
+                                <td><?php _e('Publisher(s)', 'lwn-bookcenter'); ?></td>
                                 <td>
                                     <?php the_terms($post->ID, 'publisher', '', ' - ', '' ); ?>
                                 </td>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="book-section-title">
                         <p>
-                            Book Overview
+                            <?php _e('Book Overview', 'lwn-bookcenter'); ?>
                         </p>
                     </div>
                     <div class="book-content">

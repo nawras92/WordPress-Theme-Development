@@ -79,8 +79,8 @@ function lwn_bookcenter_register_custom_taxonomies() {
     
     // Register Publisher Taxonomy
 	$publisher_labels = array(
-		'name'                       => _x( 'Publishers', 'taxonomy general name', 'lwn-bookcenter' ),
-		'singular_name'              => _x( 'Publisher', 'taxonomy singular name', 'lwn-bookcenter' ),
+		'name'                       => _x( 'Publishers', 'help text', 'taxonomy general name', 'lwn-bookcenter' ),
+		'singular_name'              => _x( 'Publisher', 'help text', 'taxonomy singular name', 'lwn-bookcenter' ),
 		'search_items'               => __( 'Search Publishers', 'lwn-bookcenter' ),
 		'popular_items'              => __( 'Popular Publishers', 'lwn-bookcenter' ),
 		'all_items'                  => __( 'All Publishers', 'lwn-bookcenter' ),
@@ -116,10 +116,10 @@ add_action( 'init', 'lwn_bookcenter_register_custom_taxonomies', 0 );
 // Register custom post types (Book)
 function lwn_bookcenter_register_book_custom_post_type() {
     $labels = array(
-        'name'                  => _x( 'Books', 'lwn-bookcenter' ),
-        'singular_name'         => _x( 'Book', 'lwn-bookcenter' ),
-        'menu_name'             => _x( 'Books', 'lwn-bookcenter' ),
-        'name_admin_bar'        => _x( 'Book', 'lwn-bookcenter' ),
+        'name'                  => _x( 'Books', 'help text', 'lwn-bookcenter' ),
+        'singular_name'         => _x( 'Book', 'help text', 'lwn-bookcenter' ),
+        'menu_name'             => _x( 'Books', 'help text', 'lwn-bookcenter' ),
+        'name_admin_bar'        => _x( 'Book', 'help text', 'lwn-bookcenter' ),
         'add_new'               => __( 'Add New', 'lwn-bookcenter' ),
         'add_new_item'          => __( 'Add New Book', 'lwn-bookcenter' ),
         'new_item'              => __( 'New Book', 'lwn-bookcenter' ),
@@ -129,7 +129,7 @@ function lwn_bookcenter_register_book_custom_post_type() {
         'search_items'          => __( 'Search Books', 'lwn-bookcenter' ),
         'parent_item_colon'     => __( 'Parent Books:', 'lwn-bookcenter' ),
         'not_found'             => __( 'No books found.', 'lwn-bookcenter' ),
-        'not_found_in_trash'    => __( 'No books found in Trash.', 'lwn-bookcenter' ),
+        'not_found_in_trash'    => __( 'No books found in Trash.', 'help text', 'lwn-bookcenter' ),
         'featured_image'        => _x( 'Book Cover Image', 'Overrides the “Featured Image” phrase for this post type. Added in 4.3', 'lwn-bookcenter' ),
         'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'lwn-bookcenter' ),
         'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'lwn-bookcenter' ),
@@ -161,3 +161,11 @@ function lwn_bookcenter_register_book_custom_post_type() {
 }
  
 add_action( 'init', 'lwn_bookcenter_register_book_custom_post_type' );
+
+
+
+
+
+
+
+

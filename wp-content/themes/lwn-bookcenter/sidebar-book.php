@@ -2,7 +2,7 @@
 
 <div id="sidebar-book">
     <div class="sidebar-title text-center">
-        <p>Latest Books</p>
+        <p><?php _e('Latest Books', 'lwn-bookcenter');  ?></p>
     </div>
 
     <?php $args = array('post_type'=> 'book',
