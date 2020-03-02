@@ -164,6 +164,50 @@ add_action( 'init', 'lwn_bookcenter_register_book_custom_post_type' );
 
 
 
+// THeme customizer 
+function lwn_bookcenter_theme_customizer($wp_customize){
+
+	$wp_customize->add_setting('lwn_bookcenter_footer_text',array(
+		'default'=> __("all copyrights reserverd ", 'lwn-bookcenter'),
+		'type'=>'theme_mod'
+
+	));
+
+	$wp_customize->add_control('lwn_bookcenter_footer_text', array(
+		'setting'=> 'lwn_bookcenter_footer_text',
+		'label' => __('Footer Text', 'lwn-bookcenter'),
+		'type' => 'textarea',
+		'section'=> 'lwn_bookcenter_footer_text_section'
+	));
+
+	$wp_customize->add_section('lwn_bookcenter_footer_text_section', array(
+
+		'title'=> __('Footer Text Section', 'lwn-bookcenter'),
+		'description'=>__('You can customize footer text in here', 'lwn-bookcenter'),
+		'description_hidden'=> true
+
+	));
+
+}
+add_action('customize_register', 'lwn_bookcenter_theme_customizer');
+
+
+// show theme modifications
+function lwn_bookcenter_display_theme_modification(){
+
+	$output = array();
+	$output['footer_text'] = get_theme_mod('lwn_bookcenter_footer_text');
+	
+	return $output;
+}
+add_action('init', 'lwn_bookcenter_display_theme_modification');
+
+
+
+
+
+
+
 
 
 
