@@ -1,6 +1,38 @@
 <?php get_header(); ?>
 
     <section id="front-page">
+
+        <div class="container-70">
+            <div class="d-grid-3 my-2">
+                <div class="box">
+                    <div class="box-header">
+                         Who are we
+                    </div>
+                    <div class="box-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
+                    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                         What do we do?
+                    </div>
+                    <div class="box-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
+                    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-header">
+                         contact us
+                    </div>
+                    <div class="box-body">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
+                    
+                    </div>
+                </div>                              
+            </div>
+        </div>
         <div class="container-90">
             <div id="book-types" class="d-grid-2">
                 <?php // get terms ?>

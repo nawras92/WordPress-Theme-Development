@@ -63,6 +63,12 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     overflow: hidden;
 }
 
+.container-70{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
 .d-grid-4{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -78,6 +84,12 @@ h1, h2, h3, h4, h5, h6, p, a, img{
 .d-grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.d-grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
 
@@ -246,6 +258,29 @@ table.book-info td a:hover{
     height: 200px;
 }
 
+/* Frontpage boxes */
+
+.box{
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.box .box-header{
+    display: inline-block;
+    border-bottom: 5px double var(--primary-color);
+    padding-bottom: 0.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.box .box-body{
+    margin: 0.5rem;
+}
+
+
+
+
+
 
 
 
@@ -302,7 +337,8 @@ table.book-info td a:hover{
     }
     .d-grid-4,
     .d-grid-2,
-    .d-grid-6, 
+    .d-grid-6,
+    .d-grid-3,
     .d-grid-7-3,
     .d-grid-2-8{
         grid-template-columns: 1fr;
