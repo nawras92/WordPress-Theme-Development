@@ -6,28 +6,27 @@
             <div class="d-grid-3 my-2">
                 <div class="box">
                     <div class="box-header">
-                         Who are we
+                        <?php echo lwn_bookcenter_display_theme_modification()['box1_title']; ?>
                     </div>
                     <div class="box-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
+                    <?php echo lwn_bookcenter_display_theme_modification()['box1_desc']; ?>
                     
                     </div>
                 </div>
                 <div class="box">
                     <div class="box-header">
-                         What do we do?
+                        <?php echo lwn_bookcenter_display_theme_modification()['box2_title']; ?>
                     </div>
                     <div class="box-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
-                    
+                        <?php echo lwn_bookcenter_display_theme_modification()['box2_desc']; ?>   
                     </div>
                 </div>
                 <div class="box">
                     <div class="box-header">
-                         contact us
+                    <?php echo lwn_bookcenter_display_theme_modification()['box3_title']; ?>
                     </div>
                     <div class="box-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis totam placeat similique aut dolore labore.
+                    <?php echo lwn_bookcenter_display_theme_modification()['box3_desc']; ?>   
                     
                     </div>
                 </div>                              

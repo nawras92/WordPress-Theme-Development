@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LWN Book Center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-17 08:30+0000\n"
+"PO-Revision-Date: 2020-02-17 08:31+0000\n"
+"Last-Translator: nawras <mail@mail.com>\n"
+"Language-Team: العربية\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100 >= 3 "
+"&& n%100<=10 ? 3 : n%100 >= 11 && n%100<=99 ? 4 : 5;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.2"
+
+#: footer.php:3
+msgid "all copyrights reserved"
+msgstr "كل حقوق محفوظة"
+
+#: front-page.php:56
+msgid "Blog Posts"
+msgstr "منشورات المدونة"
+
+#: functions.php:24
+msgctxt "taxonomy general name"
+msgid "Book Types"
+msgstr ""
+
+#: functions.php:25
+msgctxt "taxonomy singular name"
+msgid "Book Type"
+msgstr ""
+
+#: functions.php:26
+msgid "Search Book Types"
+msgstr ""
+
+#: functions.php:27
+msgid "All Book Types"
+msgstr ""
+
+#: functions.php:28
+msgid "Parent Book Type"
+msgstr ""
+
+#: functions.php:29
+msgid "Parent Book Type:"
+msgstr ""
+
+#: functions.php:30
+msgid "Edit Book Type"
+msgstr ""
+
+#: functions.php:31
+msgid "Update Book Type"
+msgstr ""
+
+#: functions.php:32
+msgid "Add New Book Type"
+msgstr ""
+
+#: functions.php:33
+msgid "New Book Type Name"
+msgstr ""
+
+#: functions.php:34
+msgid "Book Type"
+msgstr ""
+
+#: functions.php:50
+msgctxt "taxonomy general name"
+msgid "Writers"
+msgstr ""
+
+#: functions.php:51
+msgctxt "taxonomy singular name"
+msgid "Writer"
+msgstr ""
+
+#: functions.php:52
+msgid "Search Writers"
+msgstr ""
+
+#: functions.php:53
+msgid "Popular Writers"
+msgstr ""
+
+#: functions.php:54
+msgid "All Writers"
+msgstr ""
+
+#: functions.php:57
+msgid "Edit Writer"
+msgstr ""
+
+#: functions.php:58
+msgid "Update Writer"
+msgstr ""
+
+#: functions.php:59
+msgid "Add New Writer"
+msgstr ""
+
+#: functions.php:60
+msgid "New Writer Name"
+msgstr ""
+
+#: functions.php:61
+msgid "Separate writers with commas"
+msgstr ""
+
+#: functions.php:62
+msgid "Add or remove writers"
+msgstr ""
+
+#: functions.php:63
+msgid "Choose from the most used writers"
+msgstr ""
+
+#: functions.php:64
+msgid "No writers found."
+msgstr ""
+
+#: functions.php:65
+msgid "Writers"
+msgstr ""
+
+#: functions.php:84
+msgid "Search Publishers"
+msgstr ""
+
+#: functions.php:85
+msgid "Popular Publishers"
+msgstr ""
+
+#: functions.php:86
+msgid "All Publishers"
+msgstr ""
+
+#: functions.php:89
+msgid "Edit Publisher"
+msgstr ""
+
+#: functions.php:90
+msgid "Update Publisher"
+msgstr ""
+
+#: functions.php:91
+msgid "Add New Publisher"
+msgstr ""
+
+#: functions.php:92
+msgid "New Publisher Name"
+msgstr ""
+
+#: functions.php:93
+msgid "Separate Publishers with commas"
+msgstr ""
+
+#: functions.php:94
+msgid "Add or remove Publishers"
+msgstr ""
+
+#: functions.php:95
+msgid "Choose from the most used Publishers"
+msgstr ""
+
+#: functions.php:96
+msgid "No Publishers found."
+msgstr ""
+
+#: functions.php:97
+msgid "Publishers"
+msgstr ""
+
+#: functions.php:119 functions.php:121
+msgctxt "help text"
+msgid "Books"
+msgstr ""
+
+#: functions.php:120 functions.php:122
+msgctxt "help text"
+msgid "Book"
+msgstr ""
+
+#: functions.php:123
+msgid "Add New"
+msgstr ""
+
+#: functions.php:124
+msgid "Add New Book"
+msgstr "اضف كتاب جديد"
+
+#: functions.php:125
+msgid "New Book"
+msgstr ""
+
+#: functions.php:126
+msgid "Edit Book"
+msgstr ""
+
+#: functions.php:127
+msgid "View Book"
+msgstr ""
+
+#: functions.php:128
+msgid "All Books"
+msgstr ""
+
+#: functions.php:129
+msgid "Search Books"
+msgstr ""
+
+#: functions.php:130
+msgid "Parent Books:"
+msgstr ""
+
+#: functions.php:131
+msgid "No books found."
+msgstr ""
+
+#: functions.php:133
+msgctxt ""
+"Overrides the “Featured Image” phrase for this post type. Added in 4.3"
+msgid "Book Cover Image"
+msgstr ""
+
+#: functions.php:134
+msgctxt ""
+"Overrides the “Set featured image” phrase for this post type. Added in 4.3"
+msgid "Set cover image"
+msgstr ""
+
+#: functions.php:135
+msgctxt ""
+"Overrides the “Remove featured image” phrase for this post type. Added in 4.3"
+msgid "Remove cover image"
+msgstr ""
+
+#: functions.php:136
+msgctxt ""
+"Overrides the “Use as featured image” phrase for this post type. Added in 4.3"
+msgid "Use as cover image"
+msgstr ""
+
+#: functions.php:137
+msgctxt ""
+"The post type archive label used in nav menus. Default “Post Archives”. "
+"Added in 4.4"
+msgid "Book archives"
+msgstr ""
+
+#: functions.php:138
+msgctxt ""
+"Overrides the “Insert into post”/”Insert into page” phrase (used when "
+"inserting media into a post). Added in 4.4"
+msgid "Insert into book"
+msgstr ""
+
+#: functions.php:139
+msgctxt ""
+"Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used "
+"when viewing media attached to a post). Added in 4.4"
+msgid "Uploaded to this book"
+msgstr ""
+
+#: functions.php:140
+msgctxt ""
+"Screen reader text for the filter links heading on the post type listing "
+"screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4"
+msgid "Filter books list"
+msgstr ""
+
+#: functions.php:141
+msgctxt ""
+"Screen reader text for the pagination heading on the post type listing "
+"screen. Default “Posts list navigation”/”Pages list navigation”. Added in 4.4"
+msgid "Books list navigation"
+msgstr ""
+
+#: functions.php:142
+msgctxt ""
+"Screen reader text for the items list heading on the post type listing "
+"screen. Default “Posts list”/”Pages list”. Added in 4.4"
+msgid "Books list"
+msgstr ""
+
+#: sidebar-book.php:5
+msgid "Latest Books"
+msgstr "أحدث الكتب"
+
+#: single-book.php:16
+msgid "Title"
+msgstr "العنوان"
+
+#: single-book.php:24
+msgid "Description"
+msgstr "الوصف"
+
+#: single-book.php:30
+msgid "Book Type(s)"
+msgstr ""
+
+#: single-book.php:36
+msgid "Write(s)"
+msgstr ""
+
+#: single-book.php:42
+msgid "Publisher(s)"
+msgstr ""
+
+#: single-book.php:52
+msgid "Book Overview"
+msgstr "لمحة عن الكتاب"
+
+#. Name of the theme
+msgid "LWN Book Center"
+msgstr ""
+
+#. Author of the theme
+msgid "Nawras Ali"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://learnwithnaw.com"
+msgstr ""
