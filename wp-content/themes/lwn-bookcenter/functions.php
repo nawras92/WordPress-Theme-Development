@@ -192,113 +192,77 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 
 	// Add frontpage boxes 
 
-	$wp_customize->add_setting('lwn_bookcenter_box1_title', array(
+	for ($item=1 ; $item<= 3; $item++){
+
+		$section_id = 'lwn_bookcenter_box' .  $item  . '_section';
+		$section_title = 'Box ' . $item;
+		$section_desc = 'Edit the title and description of box ' . $item;
+
+		$wp_customize->add_section($section_id, array(
+			'title' => __($section_title, 'lwn-bookcenter'),
+			'description' => __($section_desc, 'lwn-bookcenter'),
+			'description_hidden' => false,
+			'panel' => 'lwn_bookcenter_frontpage_boxes'	
+		));	
 		
-		'default' => __('Box 1 Title', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
+		$setting_title_id = 'lwn_bookcenter_box' . $item . '_title';
+		$setting_default_title = 'Box ' . $item . ' Title';
+		$control_title_label = 'Box ' . $item . ' Title';
 
-	$wp_customize->add_control('lwn_bookcenter_box1_title', array(
-		'label' => __('Box 1 Title', 'lwn-bookcenter'),
-		'type' => 'text',
-		'section' => 'lwn_bookcenter_box1_section'
-	));
-
-	$wp_customize->add_setting('lwn_bookcenter_box1_desc', array(
+		$wp_customize->add_setting($setting_title_id, array(
 		
-		'default' => __('Box 1 Description', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
+			'default' => __($setting_default_title, 'lwn-bookcenter'),
+			'type' => 'theme_mod'
+		));
+	
+		$wp_customize->add_control($setting_title_id, array(
+			'label' => __($control_title_label, 'lwn-bookcenter'),
+			'type' => 'text',
+			'section' => $section_id
+		));
 
-	$wp_customize->add_control('lwn_bookcenter_box1_desc', array(
-		'label' => __('Box 1 Description', 'lwn-bookcenter'),
-		'type' => 'textarea',
-		'section' => 'lwn_bookcenter_box1_section'
-	));
+		$setting_desc_id = 'lwn_bookcenter_box' . $item . '_desc';
+		$setting_default_desc = 'Box ' . $item . ' Description';
+		$control_desc_label = 'Box ' . $item . ' Description';		
 
-	$wp_customize->add_section('lwn_bookcenter_box1_section', array(
-		'title' => __('Box 1', 'lwn-bookcenter'),
-		'description' => __('Edit the title and description of box 1', 'lwn-bookcenter'),
-		'description_hidden' => false,
-		'panel' => 'lwn_bookcenter_frontpage_boxes'
-
-	));
-
-	$wp_customize->add_setting('lwn_bookcenter_box2_title', array(
+		$wp_customize->add_setting($setting_desc_id, array(
 		
-		'default' => __('Box 2 Title', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
+			'default' => __($setting_default_desc, 'lwn-bookcenter'),
+			'type' => 'theme_mod'
+		));
+	
+		$wp_customize->add_control($setting_desc_id, array(
+			'label' => __($control_desc_label, 'lwn-bookcenter'),
+			'type' => 'textarea',
+			'section' => $section_id
+		));
 
-	$wp_customize->add_control('lwn_bookcenter_box2_title', array(
-		'label' => __('Box 2 Title', 'lwn-bookcenter'),
-		'type' => 'text',
-		'section' => 'lwn_bookcenter_box2_section'
-	));
-
-	$wp_customize->add_setting('lwn_bookcenter_box2_desc', array(
-		
-		'default' => __('Box 2 Description', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
-
-	$wp_customize->add_control('lwn_bookcenter_box2_desc', array(
-		'label' => __('Box 2 Description', 'lwn-bookcenter'),
-		'type' => 'textarea',
-		'section' => 'lwn_bookcenter_box2_section'
-	));
-
-	$wp_customize->add_section('lwn_bookcenter_box2_section', array(
-		'title' => __('Box 2', 'lwn-bookcenter'),
-		'description' => __('Edit the title and description of box 2', 'lwn-bookcenter'),
-		'description_hidden' => false,
-		'panel' => 'lwn_bookcenter_frontpage_boxes'
-
-	));
-
-	$wp_customize->add_setting('lwn_bookcenter_box3_title', array(
-		
-		'default' => __('Box 3 Title', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
-
-	$wp_customize->add_control('lwn_bookcenter_box3_title', array(
-		'label' => __('Box 3 Title', 'lwn-bookcenter'),
-		'type' => 'text',
-		'section' => 'lwn_bookcenter_box3_section'
-	));
-
-	$wp_customize->add_setting('lwn_bookcenter_box3_desc', array(
-		
-		'default' => __('Box 3 Description', 'lwn-bookcenter'),
-		'type' => 'theme_mod'
-	));
-
-	$wp_customize->add_control('lwn_bookcenter_box3_desc', array(
-		'label' => __('Box 3 Description', 'lwn-bookcenter'),
-		'type' => 'textarea',
-		'section' => 'lwn_bookcenter_box3_section'
-	));
-
-	$wp_customize->add_section('lwn_bookcenter_box3_section', array(
-		'title' => __('Box 3', 'lwn-bookcenter'),
-		'description' => __('Edit the title and description of box 3', 'lwn-bookcenter'),
-		'description_hidden' => false,
-		'panel' => 'lwn_bookcenter_frontpage_boxes'
-	));	
+	}
 
 	$wp_customize->add_panel('lwn_bookcenter_frontpage_boxes', array(
 		'title' => __('Frontpage Boxes', 'lwn-bookcenter'),
 		'description' => __('You can edit frontpage boxes here', 'lwn-bookcenter')
 	));
 
+	// Add frontpage boxes options
+	$wp_customize->add_section('lwn_bookcenter_frontpage_boxes_options', array(
+		'title' => __('Frontpage boxes options', 'lwn-bookcenter'),
+		'description' => __('You can edit frontboxes options here', 'lwn-bookcenter'),
+		'description_hidden' => false,
+		'panel' => 'lwn_bookcenter_frontpage_boxes'	
+	));	
 
 
+	$wp_customize->add_setting('lwn_bookcenter_display_frontpage_boxes', array(
+		'default' => 1
+	));
 
-
-
-
-
+	$wp_customize->add_control('lwn_bookcenter_display_frontpage_boxes', array(
+		'section' => 'lwn_bookcenter_frontpage_boxes_options',
+		'label' => __('Display frontpage boxes?', 'lwn-bookcenter'),
+		'type' => 'radio',
+		'choices' => array(1 =>'Yes', 0 => 'No'),
+	));
 
 }
 add_action('customize_register', 'lwn_bookcenter_theme_customizer');
@@ -311,14 +275,12 @@ function lwn_bookcenter_display_theme_modification(){
 	$output['footer_text'] = get_theme_mod('lwn_bookcenter_footer_text');
 
 	// frontpage boxes
-	$output['box1_title'] = get_theme_mod('lwn_bookcenter_box1_title');
-	$output['box1_desc'] = get_theme_mod('lwn_bookcenter_box1_desc');	
+	for ($item=1;$item<=3; $item++){
+		$output['box' . $item .'_title'] = get_theme_mod('lwn_bookcenter_box' . $item .'_title');
+		$output['box'. $item. '_desc'] = get_theme_mod('lwn_bookcenter_box' . $item .'_desc');		
+	}
 
-	$output['box2_title'] = get_theme_mod('lwn_bookcenter_box2_title');
-	$output['box2_desc'] = get_theme_mod('lwn_bookcenter_box2_desc');
-
-	$output['box3_title'] = get_theme_mod('lwn_bookcenter_box3_title');
-	$output['box3_desc'] = get_theme_mod('lwn_bookcenter_box3_desc');
+	$output['display_frontpage_boxes'] = get_theme_mod('lwn_bookcenter_display_frontpage_boxes');
 
 	return $output;
 }

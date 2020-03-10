@@ -2,36 +2,27 @@
 
     <section id="front-page">
 
-        <div class="container-70">
-            <div class="d-grid-3 my-2">
-                <div class="box">
-                    <div class="box-header">
-                        <?php echo lwn_bookcenter_display_theme_modification()['box1_title']; ?>
+    <?php $display_boxes = lwn_bookcenter_display_theme_modification()['display_frontpage_boxes'];?>
+        <?php if ($display_boxes):  ?>
+            <div class="container-70">
+                <div class="d-grid-3 my-2">
+                <?php for($item=1; $item<=3;$item++): ?>
+                    <?php $box_title = lwn_bookcenter_display_theme_modification()['box' . $item.'_title'];?> 
+                    <?php $box_desc = lwn_bookcenter_display_theme_modification()['box' . $item.'_desc'];?> 
+
+                    <div class="box">
+                        <div class="box-header">
+                            <?php echo $box_title; ?>
+                        </div>
+                        <div class="box-body">
+                        <?php echo $box_desc; ?>
+                        
+                        </div>
                     </div>
-                    <div class="box-body">
-                    <?php echo lwn_bookcenter_display_theme_modification()['box1_desc']; ?>
-                    
-                    </div>
+                <?php endfor; ?>                             
                 </div>
-                <div class="box">
-                    <div class="box-header">
-                        <?php echo lwn_bookcenter_display_theme_modification()['box2_title']; ?>
-                    </div>
-                    <div class="box-body">
-                        <?php echo lwn_bookcenter_display_theme_modification()['box2_desc']; ?>   
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-header">
-                    <?php echo lwn_bookcenter_display_theme_modification()['box3_title']; ?>
-                    </div>
-                    <div class="box-body">
-                    <?php echo lwn_bookcenter_display_theme_modification()['box3_desc']; ?>   
-                    
-                    </div>
-                </div>                              
             </div>
-        </div>
+        <?php endif; ?>
         <div class="container-90">
             <div id="book-types" class="d-grid-2">
                 <?php // get terms ?>
