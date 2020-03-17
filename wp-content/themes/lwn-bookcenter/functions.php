@@ -264,6 +264,48 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 		'choices' => array(1 =>'Yes', 0 => 'No'),
 	));
 
+	$wp_customize->add_setting('lwn_bookcenter_frontpage_boxes_count', array(
+		'default' => 3
+	));
+
+	$wp_customize->add_control('lwn_bookcenter_frontpage_boxes_count', array(
+		'section' => 'lwn_bookcenter_frontpage_boxes_options',
+		'label' => __('How many boxes do you want to display?', 'lwn-bookcenter'),
+		'type' => 'select',
+		'choices' => array(1 => 'one box', 
+						   2 => 'two boxes', 
+						   3 => 'three boxes'),
+	));
+
+
+	// Theme color section
+	$wp_customize->add_section('lwn_bookcenter_theme_colors', array(
+		'title' => __('Theme Colors', 'lwn-bookcenter'),
+		'description' => __('You can edit theme colors here', 'lwn-bookcenter')
+	));
+
+	$wp_customize->add_setting('lwn_bookcenter_primary_color', array(
+		'default' => '#ffd500',
+		'sanitize_callback' => 'sanitize_hex_color'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
+	'lwn_bookcenter_primary_color', array(
+		'section' => 'lwn_bookcenter_theme_colors',
+		'label' => __('Pick theme primary color', 'lwn-bookcenter')
+	)));
+
+	$wp_customize->add_setting('lwn_bookcenter_secondary_color', array(
+		'default' => '#06451b',
+		'sanitize_callback' => 'sanitize_hex_color'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
+	'lwn_bookcenter_secondary_color', array(
+		'section' => 'lwn_bookcenter_theme_colors',
+		'label' => __('Pick theme secondary color', 'lwn-bookcenter')
+	)));	
+
 }
 add_action('customize_register', 'lwn_bookcenter_theme_customizer');
 
@@ -281,16 +323,29 @@ function lwn_bookcenter_display_theme_modification(){
 	}
 
 	$output['display_frontpage_boxes'] = get_theme_mod('lwn_bookcenter_display_frontpage_boxes');
+	$output['frontpage_boxes_count'] = get_theme_mod('lwn_bookcenter_frontpage_boxes_count');
 
 	return $output;
 }
 add_action('init', 'lwn_bookcenter_display_theme_modification');
 
 
+// Display custom css
+function lwn_bookcenter_custom_css(){
+	$primary_color = get_theme_mod('lwn_bookcenter_primary_color', '#ffd500');
+	$secondary_color = get_theme_mod('lwn_bookcenter_secondary_color', '#06451b');
 
+	echo <<< START
+		<style id="theme-basic-color">
+		:root{
+			--primary-color: $primary_color;
+			--secondary-color: $secondary_color;
+		}
+		</style>
 
-
-
+	START;
+}
+add_action('wp_head', 'lwn_bookcenter_custom_css');
 
 
 

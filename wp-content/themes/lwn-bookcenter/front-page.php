@@ -3,10 +3,11 @@
     <section id="front-page">
 
     <?php $display_boxes = lwn_bookcenter_display_theme_modification()['display_frontpage_boxes'];?>
+    <?php $boxes_count = lwn_bookcenter_display_theme_modification()['frontpage_boxes_count']; ?>
         <?php if ($display_boxes):  ?>
             <div class="container-70">
-                <div class="d-grid-3 my-2">
-                <?php for($item=1; $item<=3;$item++): ?>
+                <div class="d-grid-<?php echo $boxes_count; ?> my-2">
+                <?php for($item=1; $item<=$boxes_count;$item++): ?>
                     <?php $box_title = lwn_bookcenter_display_theme_modification()['box' . $item.'_title'];?> 
                     <?php $box_desc = lwn_bookcenter_display_theme_modification()['box' . $item.'_desc'];?> 
 

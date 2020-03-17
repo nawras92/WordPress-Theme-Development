@@ -81,6 +81,12 @@ h1, h2, h3, h4, h5, h6, p, a, img{
     grid-gap: 1rem;
 }
 
+.d-grid-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
 .d-grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
