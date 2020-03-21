@@ -304,8 +304,28 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 	'lwn_bookcenter_secondary_color', array(
 		'section' => 'lwn_bookcenter_theme_colors',
 		'label' => __('Pick theme secondary color', 'lwn-bookcenter')
-	)));	
+	)));
 
+
+	$wp_customize->add_section('lwn_bookcenter_media_section', array(
+		'title' => __('Media Section', 'lwn-bookcenter')
+	));
+
+	$wp_customize->add_setting('lwn_bookcenter_default_thumbnail', array(
+		'default'=> '',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'lwn_bookcenter_default_thumbnail',
+		array(
+			'section' => 'lwn_bookcenter_media_section',
+			'label' => __('Default Thumbnail', 'lwn-bookcenter'),
+			'flex_width' => false,
+			'flex_height' => false,
+			'height' => '400',
+			'width' => '200'
+		)));
+
+	
 }
 add_action('customize_register', 'lwn_bookcenter_theme_customizer');
 
@@ -325,6 +345,7 @@ function lwn_bookcenter_display_theme_modification(){
 	$output['display_frontpage_boxes'] = get_theme_mod('lwn_bookcenter_display_frontpage_boxes');
 	$output['frontpage_boxes_count'] = get_theme_mod('lwn_bookcenter_frontpage_boxes_count');
 
+	$output['default_thumbnail'] = get_theme_mod('lwn_bookcenter_default_thumbnail', '');
 	return $output;
 }
 add_action('init', 'lwn_bookcenter_display_theme_modification');

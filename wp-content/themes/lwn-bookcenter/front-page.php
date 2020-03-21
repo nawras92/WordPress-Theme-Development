@@ -56,7 +56,12 @@
                                 <?php $query->the_post(); ?>
                                     <div class="book">
                                         <div class="book-thumbnail">
-                                            <?php the_post_thumbnail();?>
+                                           <?php if (has_post_thumbnail()): ?>
+                                                <?php the_post_thumbnail();?>
+                                           <?php else: ?>
+                                                <?php $image_id =  lwn_bookcenter_display_theme_modification()['default_thumbnail']; ?>
+                                                <?php echo wp_get_attachment_image($image_id); ?>
+                                           <?php endif; ?>
                                         </div>
                                         <div class="book-title">
                                             <a href="<?php the_permalink(); ?>">
