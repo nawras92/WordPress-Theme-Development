@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+
+<?php echo 'theme mod:' . lwn_bookcenter_display_theme_modification()['setting_type_theme_mod']; ?>
+<br>
+<?php echo 'option: ' . lwn_bookcenter_display_theme_modification()['setting_type_option']; ?>
+
     <section id="front-page">
 
     <?php $display_boxes = lwn_bookcenter_display_theme_modification()['display_frontpage_boxes'];?>

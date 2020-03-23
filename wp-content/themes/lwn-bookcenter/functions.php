@@ -325,6 +325,32 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 			'width' => '200'
 		)));
 
+
+	$wp_customize->add_section('lwn_bookcenter_settings_types', array(
+		'title' => __('Settings Types', 'lwn-bookcenter')
+	));
+
+	$wp_customize->add_setting('lwn_bookcenter_theme_mod', array(
+		'default' => 'Theme modification setting type',
+		'type'=> 'theme_mod'
+	));
+
+	$wp_customize->add_control('lwn_bookcenter_theme_mod', array(
+		'label' => __('Theme mod', 'lwn-bookcenter'),
+		'type' => 'text',
+		'section' => 'lwn_bookcenter_settings_types'
+	));
+
+	$wp_customize->add_setting('lwn_bookcenter_option', array(
+		'default' => 'Option setting type',
+		'type' => 'option'
+	));
+
+	$wp_customize->add_control('lwn_bookcenter_option', array(
+		'label' => __('Option', 'lwn-bookcenter'),
+		'type' => 'text',
+		'section' => 'lwn_bookcenter_settings_types'
+	));
 	
 }
 add_action('customize_register', 'lwn_bookcenter_theme_customizer');
@@ -346,6 +372,9 @@ function lwn_bookcenter_display_theme_modification(){
 	$output['frontpage_boxes_count'] = get_theme_mod('lwn_bookcenter_frontpage_boxes_count');
 
 	$output['default_thumbnail'] = get_theme_mod('lwn_bookcenter_default_thumbnail', '');
+
+	$output['setting_type_theme_mod'] = get_theme_mod('lwn_bookcenter_theme_mod', 'no value for theme mod');
+	$output['setting_type_option'] = get_option('lwn_bookcenter_option', 'no value for option');
 	return $output;
 }
 add_action('init', 'lwn_bookcenter_display_theme_modification');
