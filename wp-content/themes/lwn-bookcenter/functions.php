@@ -212,7 +212,8 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 		$wp_customize->add_setting($setting_title_id, array(
 		
 			'default' => __($setting_default_title, 'lwn-bookcenter'),
-			'type' => 'theme_mod'
+			'type' => 'theme_mod',
+			'sanitize_callback' => 'sanitize_title'
 		));
 	
 		$wp_customize->add_control($setting_title_id, array(
@@ -228,7 +229,8 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 		$wp_customize->add_setting($setting_desc_id, array(
 		
 			'default' => __($setting_default_desc, 'lwn-bookcenter'),
-			'type' => 'theme_mod'
+			'type' => 'theme_mod',
+			'sanitize_callback' => 'sanitize_text_field'
 		));
 	
 		$wp_customize->add_control($setting_desc_id, array(
@@ -313,6 +315,7 @@ function lwn_bookcenter_theme_customizer($wp_customize){
 
 	$wp_customize->add_setting('lwn_bookcenter_default_thumbnail', array(
 		'default'=> '',
+		'sanitize_callback' => 'absint'
 	));
 
 	$wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'lwn_bookcenter_default_thumbnail',
